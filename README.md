@@ -1,5 +1,10 @@
-# flip32+
+# twist32+
 
-This is a repository for my work on providing some easier to find and use documents for the flip32+ board. 
+This should be pin compatible with the naze32/flip32+ but will require modified firmware to drive the MPU9150
 
-I'll also be trying to build a newly laid out board which should be pin compatible to the original board.
+Newly laid out PCB based on the MPU9150 (accelerometer, gyroscope, magnetometer)
+MS5611-01BA - Barometer 
+
+Designed to fit the standard 36mm footprint of other flight controllers.
+
+Power via ESC 1.
