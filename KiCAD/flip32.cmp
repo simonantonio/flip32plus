@@ -1,22 +1,15 @@
-Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 13/07/2015 3:55:28 PM
+Cmp-Mod V01 Created by Cvpcb (after 2015-mar-04 BZR unknown)-product   date = 16/07/2015 2:33:30 PM
 
 BeginCmp
-TimeStamp = /55A3451D;
+TimeStamp = /55A767FE;
 Reference = C1;
 ValeurCmp = 0.1uF;
 IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = /55A3452C;
+TimeStamp = /55A7680D;
 Reference = C2;
-ValeurCmp = 4.7uF;
-IdModule  = Capacitors_SMD:C_0805_HandSoldering;
-EndCmp
-
-BeginCmp
-TimeStamp = /55A32F88;
-Reference = C3;
 ValeurCmp = 0.1uF;
 IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
@@ -45,7 +38,7 @@ EndCmp
 BeginCmp
 TimeStamp = /559FDE02;
 Reference = C7;
-ValeurCmp = 0.1uF;
+ValeurCmp = 2.2nF 50v;
 IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
 
@@ -85,20 +78,6 @@ IdModule  = Capacitors_SMD:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = /559FF739;
-Reference = C13;
-ValeurCmp = 0.1uF;
-IdModule  = Capacitors_SMD:C_0805_HandSoldering;
-EndCmp
-
-BeginCmp
-TimeStamp = /559FF72A;
-Reference = C14;
-ValeurCmp = C;
-IdModule  = Capacitors_SMD:C_0805_HandSoldering;
-EndCmp
-
-BeginCmp
 TimeStamp = /559F77B9;
 Reference = C15;
 ValeurCmp = C;
@@ -129,7 +108,7 @@ EndCmp
 BeginCmp
 TimeStamp = /559F707A;
 Reference = D1;
-ValeurCmp = BATJ4C;
+ValeurCmp = BAV23C;
 IdModule  = Connect:GS3;
 EndCmp
 
@@ -155,17 +134,24 @@ IdModule  = LEDs:LED-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /55A32D6B;
-Reference = IC1;
-ValeurCmp = MMA8452Q;
-IdModule  = Housings_DFN_QFN:QFN-16-1EP_3x3mm_Pitch0.5mm;
-EndCmp
-
-BeginCmp
 TimeStamp = /559F6FD5;
 Reference = IC2;
 ValeurCmp = MIC5205;
 IdModule  = Housings_SOT-23_SOT-143_TSOT-6:SOT-23-5;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A75A12;
+Reference = JP1;
+ValeurCmp = JUMPER;
+IdModule  = Oddities:NetTie-I_Connected;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A75A03;
+Reference = JP2;
+ValeurCmp = JUMPER;
+IdModule  = Oddities:NetTie-I_Connected;
 EndCmp
 
 BeginCmp
@@ -176,10 +162,10 @@ IdModule  = Socket_Strips:Socket_Strip_Straight_1x02;
 EndCmp
 
 BeginCmp
-TimeStamp = /559FA73C;
+TimeStamp = /55A77427;
 Reference = P2;
 ValeurCmp = ESC OUT;
-IdModule  = Pin_Headers:Pin_Header_Straight_1x06;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x08;
 EndCmp
 
 BeginCmp
@@ -190,31 +176,31 @@ IdModule  = Pin_Headers:Pin_Header_Straight_1x02;
 EndCmp
 
 BeginCmp
-TimeStamp = /559FA705;
+TimeStamp = /55A77418;
 Reference = P4;
-ValeurCmp = ESC PWR;
-IdModule  = Pin_Headers:Pin_Header_Straight_2x06;
-EndCmp
-
-BeginCmp
-TimeStamp = /559F96D8;
-Reference = P5;
 ValeurCmp = RECV CHANNELS;
-IdModule  = Pin_Headers:Pin_Header_Straight_1x08;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x10;
 EndCmp
 
 BeginCmp
-TimeStamp = /559FBDFB;
+TimeStamp = /55A77436;
+Reference = P5;
+ValeurCmp = UART 1;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x04;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A77445;
 Reference = P6;
-ValeurCmp = EXP HEADER;
-IdModule  = Pin_Headers:Pin_Header_Straight_2x04;
+ValeurCmp = I2C;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x04;
 EndCmp
 
 BeginCmp
-TimeStamp = /559F96E7;
+TimeStamp = /55A78194;
 Reference = P7;
-ValeurCmp = RECV POWER;
-IdModule  = Pin_Headers:Pin_Header_Straight_2x08;
+ValeurCmp = UNUSED;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x08;
 EndCmp
 
 BeginCmp
@@ -323,13 +309,6 @@ IdModule  = Resistors_SMD:R_0805_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = /559F77D7;
-Reference = R12;
-ValeurCmp = R;
-IdModule  = Resistors_SMD:R_0805_HandSoldering;
-EndCmp
-
-BeginCmp
 TimeStamp = /559F91FD;
 Reference = R13;
 ValeurCmp = 1k;
@@ -340,13 +319,13 @@ BeginCmp
 TimeStamp = /559F6F6A;
 Reference = U1;
 ValeurCmp = LP38691;
-IdModule  = SMD_Packages:TO-263;
+IdModule  = Transistors_SMD:sc70-5;
 EndCmp
 
 BeginCmp
-TimeStamp = /559FD934;
+TimeStamp = /55A75213;
 Reference = U2;
-ValeurCmp = MPU-6050;
+ValeurCmp = MPU-9150;
 IdModule  = Housings_DFN_QFN:QFN-24-1EP_3x3mm_Pitch0.4mm;
 EndCmp
 
@@ -355,13 +334,6 @@ TimeStamp = /559F7BB3;
 Reference = U3;
 ValeurCmp = STM32F103CB;
 IdModule  = Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm;
-EndCmp
-
-BeginCmp
-TimeStamp = /559FF70C;
-Reference = U4;
-ValeurCmp = HMC5883L;
-IdModule  = Housings_DFN_QFN:QFN-16-1EP_3x3mm_Pitch0.5mm;
 EndCmp
 
 BeginCmp

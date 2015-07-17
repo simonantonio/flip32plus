@@ -1680,6 +1680,8 @@ F 3 "" H 11850 5650 60  0000 C CNN
 	1    11850 5650
 	1    0    0    -1  
 $EndComp
+Text Label 10100 3050 0    60   ~ 0
+UU1
 Text Label 10100 3350 0    60   ~ 0
 UU2
 Text Label 6900 2650 2    60   ~ 0
@@ -1762,6 +1764,4 @@ F 3 "" H 5350 8150 60  0000 C CNN
 	1    5350 8150
 	1    0    0    -1  
 $EndComp
-Text Label 10100 3050 0    60   ~ 0
-BEEP
 $EndSCHEMATC

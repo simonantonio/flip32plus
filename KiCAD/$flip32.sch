@@ -44,7 +44,7 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Flip32+"
-Date "16 jul 2015"
+Date "17 jul 2015"
 Rev "1"
 Comp ""
 Comment1 "Redrawn by S.Antonio"
@@ -1719,8 +1719,6 @@ Wire Wire Line
 	7000 4400 6900 4400
 Wire Wire Line
 	6900 4500 7000 4500
-Text Label 11550 5300 2    60   ~ 0
-UU1
 Text Label 11550 5400 2    60   ~ 0
 UU2
 Text Label 11550 5500 2    60   ~ 0

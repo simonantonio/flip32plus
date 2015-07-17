@@ -1,0 +1,87 @@
+
+(rules PCB flip32
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 10797)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_600:400_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_600:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu)
+    )
+  )
+  (class "kicad_default"
+    "/VCC_SEN" GND "/TO_REGS" "N-0000031" "N-0000032" VCC "/OSC_OUT" "N-0000036"
+    "/OSC_IN" /VBUS "N-0000017" "N-0000018" "N-0000019" "/VCC_IN" "N-0000076" "N-0000072"
+    "N-0000075" "N-0000080" "N-0000024" "N-0000033" "N-0000092" /PWM1 /PWM2 /PWM3
+    /PWM4 /PWM5 /PWM6 "N-0000091" "/RC_CH1" "/RC_CH2" "/RC_CH3" "/RC_CH4"
+    "/RC_CH5" "/RC_CH6" "/RC_CH7" "/RC_CH8" /TX0 /RX0 /SDA /SCL
+    /UU1 /UU2 /UU3 /UU4 /UU5 /UU7 /UU8 /SWDIO
+    /SWDCLK /NRST /BOOT0 "N-0000090" "/POWER_ADC" /LED0 /LED1 "N-0000016"
+    /BOOT1 "N-0000025" "N-0000020" "N-0000028" "N-0000029" "N-0000030" "/MPU_INT" "N-0000050"
+    "N-0000068" "N-0000069" "N-0000070" "N-0000071" "N-0000051" "N-0000034" "N-0000052" "/ACC_INT2"
+    "/MAG_RDY" "N-0000055" "N-0000053" "N-0000043" "N-0000042" "N-000002" "N-0000041" "N-0000035"
+    "N-000003" "N-000004" "N-000005" "N-000006" "N-000007" "N-000008" "N-000009" "N-0000010"
+    "N-000001" "N-0000011" "N-0000040" "N-0000039" "N-0000014" "N-0000015"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu)
+    )
+  )
+)
