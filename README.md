@@ -11,5 +11,5 @@ Power via ESC 1.
 
 Makes use of JST SH connectors to take up less board space and make wiring tidier
 
-![Twist32+ Front](https://raw.github.com/simonantonio/flip32+/mpu9250/Renders/to/twist-32-f.png)
-![Twist32+ Back](https://raw.github.com/simonantonio/flip32+/mpu9250/Renders/to/twist-32-b.png)
+![Twist32+ Front](https://raw.githubusercontent.com/simonantonio/flip32plus/mpu9250/Renders/twist-32-f.png)
+![Twist32+ Back](https://raw.githubusercontent.com/simonantonio/flip32plus/mpu9250/Renders/twist-32-b.png)
