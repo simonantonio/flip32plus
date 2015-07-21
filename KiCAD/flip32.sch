@@ -1196,8 +1196,6 @@ $EndComp
 Wire Wire Line
 	5050 9050 4900 9050
 Wire Wire Line
-	5050 9150 4350 9150
-Wire Wire Line
 	4350 9150 4350 8850
 Text Label 6750 9550 0    60   ~ 0
 MPU_INT
@@ -1482,7 +1480,6 @@ Wire Wire Line
 	5050 9400 4350 9400
 Wire Wire Line
 	4350 9400 4350 9450
-Connection ~ 4950 9050
 $Comp
 L JUMPER JP2
 U 1 1 55A75A03
@@ -1742,9 +1739,6 @@ F 3 "" H 5350 8150 60  0000 C CNN
 $EndComp
 Text Label 10100 3050 0    60   ~ 0
 BEEP
-Wire Wire Line
-	4950 9150 4950 9050
-Connection ~ 4950 9150
 NoConn ~ 5050 9250
 NoConn ~ 5050 9850
 NoConn ~ 5050 9650
@@ -1752,4 +1746,6 @@ Wire Wire Line
 	5050 9500 4850 9500
 Wire Wire Line
 	4850 9500 4850 9950
+Wire Wire Line
+	5050 9150 4350 9150
 $EndSCHEMATC
